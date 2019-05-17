@@ -29,7 +29,7 @@
 .header .nav ul li a { display: block; padding: 23px 10px; font-size: 17px; font-weight: 700; color: #444; }
 
 /* BANNER */
-.banner_menu { overflow: hidden; position: absolute; left: 0; top: 20px; width: 100%; height: 100px; }
+.banner_menu { overflow: hidden; position: absolute; left: 0; top: 20px; width: 100%; height: 100px; z-index: 10; }
 .banner_menu a { color: #fff; font-size: 16px; transition: all 0.3s; display: block; font-weight: 500; }
 .banner_menu a:hover { color: #c1c1c1; }
 .banner_menu .bm_left { float: left; font-size: 0; }
@@ -49,7 +49,11 @@
 .banner_menu .bm_right li.purple { margin-right: 0; }
 .banner_menu .bm_right li.purple a { background: #351f66; border: 1px solid #3b2a60; } 
 
-
+/* Slide */
+.slider { width: 100%;  }
+.slider .ss1 { background: url(../img/swiper01.jpg) no-repeat center/cover;  }
+.slider .ss2 { background: url(../img/main_slider01_2000.jpg) no-repeat center/cover; }
+.slider .ss3 { background: url(../img/main_slider02_2000.jpg) no-repeat center/cover; }
 
 
 /* media query */
