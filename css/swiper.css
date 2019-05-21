@@ -21,7 +21,7 @@
   height: 500px;    
 }
 .swiper-slide .container { z-index: 20; }
-.swiper-slide:after { content: ''; position: absolute; z-index: 2; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: .4; }
+.slider .swiper-slide:after { content: ''; position: absolute; z-index: 2; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: .4; }
 
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
