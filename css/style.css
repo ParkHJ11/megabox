@@ -11,6 +11,7 @@
 #header { width: 100%; border-bottom: 1px solid #c6c6c6; background: #fff; }
 #banner { position: relative;  }
 #movie { background: #f8f8f8;  }
+#event {  }
 
 
 /* tablet, mobile menu */
@@ -67,7 +68,7 @@
 .movie { padding: 100px 0; }
 .movie_title { margin-bottom: 74px; }
 .movie_title ul { text-align: center; font-size: 0; }
-.movie_title li { display: inline-block; width: 210px; border: 1px solid #c4c4c4; margin-right: -1px; }
+.movie_title li { display: inline-block; width: 210px; border: 1px solid #c4c4c4; margin-right: -1px; background: #fff; }
 .movie_title li a { display: block; padding: 15px 0; font-size: 18px; color: #666; font-weight: 700; }
 .movie_title li.active a { background: #666; color: #fff; } 
 .movie_chart { overflow: hidden; }
@@ -100,8 +101,14 @@
 .movie_chart >div > div > div .info .info_btn a:first-child { left: 17px;  } 
 .movie_chart >div > div > div .info .info_btn a:last-child { right: 17px;  } 
 
-
-
+/* event */
+.event { padding: 100px 0; overflow: hidden; }
+.event h2 { font-size: 30px; font-weight: 500; margin-bottom: 24px; }
+.event img { vertical-align: top; }
+.event .event_left { float: left; width: 66%; margin-right: 2%; }
+.event .event_right { float: left; width: 32%; }
+.event .event_left .event_box1 { width: 50%; float: left; }
+.event .event_left .event_box2 { width: 50%; float: left; }
 
 /* media query */
 @media screen and (max-width:1290px){
@@ -125,6 +132,10 @@
     .banner_menu .bm_left ul { display: none; }
     .banner_menu .bm_right ul:first-child { display: none; }
     
+    .movie_chart >div > div > div .info .info_btn a { font-size: 18px; font-weight: 500; padding: 15px 10px; }
+    
+
+    
 }
 
 @media (max-width:960px){
@@ -146,7 +157,8 @@
     .header h1 strong { display: none; }
     
     #movie { background: transparent; }
-    #movie .row { margin: 24px; padding: 24px; background: #fff; }
+    #movie .row,
+    #event .row { margin: 24px; padding: 24px; background: #fff; }
     .movie { padding: 0; }
     .movie .ir_so { position: static; width: auto; height: auto; line-height: normal; text-indent: 0; font-size: 24px; font-weight: bold; padding-bottom: 20px; }
     .movie_title { margin-bottom: 30px; }
@@ -155,7 +167,23 @@
     .movie_title li { width: auto; border: 0; }
     .movie_title li a { position: relative; font-size: 18px; color: #666; font-weight: 400; padding: 0 0 20px 0; margin-right: 30px; }
     .movie_title li.active a { background: transparent; color: #666;  }
-    .movie_title li.active a:after { position: absolute; content: ''; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #222;   } 
+    .movie_title li.active a:after { position: absolute; content: ''; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #222;   }
+    .movie_chart >div > div > div .info .info_btn a { padding: 15px 26px; }
+
+    .event { padding: 24px; background: #fff; }
+    .event h2 { font-size: 24px; }
+    .event .event_right { display: none; }
+    .event .event_left { width: 100%; margin-right: 0; }
+    
+    /* event 
+.event { padding: 100px 0; overflow: hidden; }
+.event h2 { font-size: 30px; font-weight: 500; margin-bottom: 24px; }
+.event img { vertical-align: top; }
+.event .event_left { float: left; width: 66%; margin-right: 2%; }
+.event .event_right { float: left; width: 32%; }
+.event .event_left .event_box1 { width: 50%; float: left; }
+.event .event_left .event_box2 { width: 50%; float: left; }
+    */
 }
 
 @media (max-width:600px){
@@ -177,7 +205,6 @@
     #movie .container:after { content: ''; position: absolute; z-index: 3; top: 0; right: 0; width: 8px; height: 100%; background: #ecdceb; }
     #movie .row:after { content: ''; position: absolute; z-index: 1; top: 0; right: 0; width: 24px; height: 100%; background: #fff; }
     
-    
     .movie .ir_so { font-size: 18px; }
     .movie_title { margin-bottom: 20px; position: relative; z-index: 2; }
     .movie_title ul { overflow: hidden; white-space: nowrap; overflow-x: auto; }
@@ -192,11 +219,10 @@
     .movie_chart >div > div > div .info .info_btn a:first-child { bottom: 35px; padding: 12px 5px; width: 52%; left: 50%; transform: translateX(-50%); box-sizing: border-box;  }
     .movie_chart >div > div > div .info .info_btn a:last-child { display: none; }
     
-    
+    #event .row { margin: 8px; padding: 16px; }
+    .event { padding: 0; }
+    .event h2 { font-size: 18px; margin-bottom: 10px; }
 }
-
-
-
 
 @media (max-width:480px){
     .movie_title li a { margin-right: 20px; }
