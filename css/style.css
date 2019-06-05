@@ -158,6 +158,7 @@
 .help article { float: left; width: 32%; margin-right: 2%; height: 500px; }
 .help article:last-child { margin-right: 0; } 
 .help article > div { border: 1px solid #dbdbdb; height: 350px; }
+.help article:last-child > div { height: 384px; }
 .help .help_box1 {  }
 .help article h3 { font-size: 30px; font-weight: 500; margin-bottom: 20px; }
 
@@ -187,6 +188,15 @@
 .card ul li a strong { display: block; padding-left: 115px; font-size: 18px; color: #777;  }
 .card ul li a em { display: block; padding-left: 115px; font-size: 14px; color: #777; font-weight: 300; }
 
+/* 고객센터 */
+.service { overflow: hidden; }
+.service li { float: left; width: 50%; height: 193px; box-sizing: border-box; border: 1px solid #d7d7d7; text-align: center; }
+.service li:nth-child(1) { border-right: 0; border-bottom: 0; }
+.service li:nth-child(2) { border-bottom: 0; }
+.service li:nth-child(3) { border-right: 0; }
+.service li a span { display: block; width: 120px; height: 120px; margin: 20px auto 0; overflow: hidden; font-size: 4em; color: #333; text-align: center;  }
+.service li a span svg { border: 0; vertical-align: -30px; }
+.service li a strong { color: #777; font-size: 18px; font-weight: 500; }
 
 
 
